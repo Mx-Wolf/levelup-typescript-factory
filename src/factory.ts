@@ -10,7 +10,7 @@ export class Factory implements UiFactory {
     private productCtor: new () => ProductSelect
   ) { }
 
-  createButton = () => new this.buttonCtor();
-  createCustomerSelect = () => new this.customerCtor();
-  createProductSelect = () => new this.productCtor();
+  button = () => new this.buttonCtor();
+  customer = () => new this.customerCtor();
+  product = () => new this.productCtor();
 }
